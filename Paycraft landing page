@@ -1,0 +1,131 @@
+import { Check, Code, Zap, BarChart3, Shield, Moon } from "lucide-react";
+
+export default function Home() {
+  return (
+    <main className="bg-white text-[#0A2540]">
+      {/* NAVBAR */}
+      <nav className="flex items-center justify-between px-8 py-6 max-w-7xl mx-auto">
+        <h1 className="text-2xl font-bold">paycraft</h1>
+        <div className="flex items-center gap-6">
+          <a href="#" className="text-sm font-medium">Docs</a>
+          <a href="#" className="text-sm font-medium">Dashboard</a>
+          <button className="bg-[#00C896] text-white px-4 py-2 rounded-md text-sm font-semibold">
+            Get API Keys
+          </button>
+        </div>
+      </nav>
+
+      {/* HERO */}
+      <section className="max-w-7xl mx-auto px-8 py-24 grid md:grid-cols-2 gap-16 items-center">
+        <div>
+          <h2 className="text-5xl font-bold leading-tight mb-6">
+            Payments infrastructure <br /> built for developers
+          </h2>
+          <p className="text-lg text-gray-600 mb-8">
+            APIs, webhooks, and real-time analytics designed for African fintech
+            builders.
+          </p>
+          <div className="flex gap-4">
+            <button className="bg-[#00C896] text-white px-6 py-3 rounded-md font-semibold">
+              Start Building
+            </button>
+            <button className="border border-gray-300 px-6 py-3 rounded-md font-semibold">
+              View Docs
+            </button>
+          </div>
+        </div>
+
+        {/* Dashboard Preview Placeholder */}
+        <div className="bg-[#0A2540] rounded-xl p-6 text-white shadow-xl">
+          <p className="text-sm text-gray-300 mb-2">Live Dashboard Preview</p>
+          <div className="grid grid-cols-3 gap-4">
+            <div className="bg-white/10 p-4 rounded">
+              <p className="text-xs">Total Volume</p>
+              <p className="text-xl font-bold">KES 12.4M</p>
+            </div>
+            <div className="bg-white/10 p-4 rounded">
+              <p className="text-xs">Success Rate</p>
+              <p className="text-xl font-bold text-[#00C896]">98.7%</p>
+            </div>
+            <div className="bg-white/10 p-4 rounded">
+              <p className="text-xs">Latency</p>
+              <p className="text-xl font-bold">220ms</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* TRUST BAR */}
+      <section className="border-t border-b py-10">
+        <div className="max-w-7xl mx-auto px-8 grid md:grid-cols-4 gap-6 text-sm text-gray-600">
+          <div className="flex items-center gap-2"><Shield size={16}/> Bank-grade security</div>
+          <div className="flex items-center gap-2"><Zap size={16}/> Real-time processing</div>
+          <div className="flex items-center gap-2"><Code size={16}/> Developer-first APIs</div>
+          <div className="flex items-center gap-2"><BarChart3 size={16}/> Live analytics</div>
+        </div>
+      </section>
+
+      {/* FEATURES */}
+      <section className="max-w-7xl mx-auto px-8 py-24">
+        <h3 className="text-3xl font-bold mb-12 text-center">
+          Everything you need to scale payments
+        </h3>
+
+        <div className="grid md:grid-cols-3 gap-8">
+          {[
+            "Real-time transaction feed",
+            "Webhook retries & logs",
+            "Secure API key rotation",
+            "Live success & latency metrics",
+            "Test & Live environments",
+            "Dark mode support",
+          ].map((feature) => (
+            <div key={feature} className="border rounded-lg p-6">
+              <Check className="text-[#00C896] mb-3" />
+              <p className="font-medium">{feature}</p>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* CODE SECTION */}
+      <section className="bg-[#0A2540] text-white py-24">
+        <div className="max-w-7xl mx-auto px-8 grid md:grid-cols-2 gap-16 items-center">
+          <div>
+            <h3 className="text-3xl font-bold mb-6">
+              Integrate in minutes
+            </h3>
+            <p className="text-gray-300 mb-6">
+              Simple REST APIs with predictable responses.
+            </p>
+          </div>
+
+          <pre className="bg-black rounded-lg p-6 text-sm overflow-x-auto">
+{`curl -X POST https://api.paycraft.dev/payments \\
+-H "Authorization: Bearer sk_live_xxx" \\
+-d amount=1000 \\
+-d currency=KES`}
+          </pre>
+        </div>
+      </section>
+
+      {/* CTA */}
+      <section className="max-w-7xl mx-auto px-8 py-24 text-center">
+        <h3 className="text-4xl font-bold mb-6">
+          Start building with Paycraft
+        </h3>
+        <p className="text-gray-600 mb-8">
+          Create an account and accept your first payment today.
+        </p>
+        <button className="bg-[#00C896] text-white px-8 py-4 rounded-md text-lg font-semibold">
+          Get Started Free
+        </button>
+      </section>
+
+      {/* FOOTER */}
+      <footer className="border-t py-10 text-center text-sm text-gray-500">
+        © {new Date().getFullYear()} Paycraft. Built for developers.
+      </footer>
+    </main>
+  );
+}

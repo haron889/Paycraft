@@ -1,0 +1,143 @@
+🧭 Introduction to PayCraft
+
+PayCraft is a developer-first fintech platform designed to simplify payments across Africa. It empowers businesses and developers with seamless APIs, intuitive dashboards, and local-first infrastructure to accept, manage, and optimize payments.
+
+🚀 Getting Started with PayCraft
+
+Step 1: Sign Up
+
+Visit paycraft.africa and create an account.
+
+Choose between Business or Developer onboarding.
+
+Step 2: Verify Your Account
+
+Submit required documents (business registration, ID, etc.).
+
+Once verified, access your dashboard and API keys.
+
+Step 3: Choose Your Integration Path
+
+No-code: Use PayCraft’s hosted checkout and payment links.
+
+Low-code: Embed widgets into your site.
+
+Full-code: Integrate via RESTful APIs or SDKs.
+
+🔧 Core Features of PayCraft
+
+Feature
+
+Description
+
+Payment APIs
+
+Accept mobile money, card, and bank payments via secure endpoints.
+
+Hosted Checkout
+
+Branded checkout page for quick setup.
+
+Payment Links
+
+Generate links for one-time or recurring payments.
+
+Webhooks
+
+Receive real-time updates on payment events.
+
+Dashboard Analytics
+
+Monitor transactions, revenue, and customer behavior.
+
+Developer Sandbox
+
+Test integrations safely before going live.
+
+Multi-Currency Support
+
+Accept payments in KES, NGN, ZAR, USD, and more.
+
+Local Payment Methods
+
+Deep integration with M-Pesa, Airtel Money, Flutterwave, etc.
+
+Recurring Billing
+
+Automate subscriptions and scheduled payments.
+
+Smart Routing
+
+Optimize payment success rates across providers.
+
+🛠️ How to Use PayCraft’s Features
+
+1. Accept Payments via API
+
+Use the /payments/initiate endpoint.
+
+Pass customer details, amount, currency, and callback URL.
+
+Receive a transaction ID and redirect URL.
+
+2. Create Payment Links
+
+Go to Dashboard → Payment Links → Create New.
+
+Customize amount, description, expiry, and branding.
+
+Share via SMS, email, or social media.
+
+3. Set Up Webhooks
+
+Navigate to Developer Settings → Webhooks.
+
+Add your endpoint URL.
+
+Choose events (e.g., payment success, failure, refund).
+
+4. Monitor Transactions
+
+Use the dashboard filters to view by date, status, or channel.
+
+Export reports for accounting or analysis.
+
+5. Test in Sandbox Mode
+
+Switch to Sandbox in Developer Settings.
+
+Use test credentials and mock data.
+
+Validate flow before going live.
+
+🌍 Where to Use PayCraft
+
+E-commerce platforms: Seamless checkout and payment links.
+
+SaaS products: Recurring billing and API integrations.
+
+Freelancers & Creators: Share payment links for services.
+
+NGOs & Events: Collect donations or ticket payments.
+
+Mobile apps: Embed PayCraft SDKs for in-app payments.
+
+📞 Support & Resources
+
+Docs: docs.paycraft.africa
+
+Community: Join the PayCraft Discord or Forum.
+
+Support: Email support@paycraft.africa or use live chat.
+
+💡 Tips for Success
+
+Use branded checkout for trust.
+
+Monitor analytics to optimize conversion.
+
+Test thoroughly in sandbox before launch.
+
+Stay updated via PayCraft’s changelog and blog.
+
+Start building with PayCraft and power the future of African payments.

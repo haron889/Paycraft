@@ -1,0 +1,130 @@
+Below are 3 brand landing page concepts for Paycraft that visually and emotionally match the dashboard designs you approved earlier. Each one aligns with a different audience, but they all share the same design system (colors, typography, components) so the transition from landing → dashboard feels seamless.
+🅰️ Landing Page A: Developer-First Fintech (Stripe-level)
+Best match: Design A – Developer Control Center
+🧠 Core Message
+“Payments infrastructure built for developers.”
+🧩 Page Structure
+🔷 Hero Section
+Left:
+Headline:
+“Build, scale, and automate payments with Paycraft.”
+Subtext:
+APIs, webhooks, and analytics designed for African fintech builders.
+CTAs:
+Get API Keys (primary – green)
+View Docs (secondary)
+Right:
+Embedded dashboard preview (real screenshots later)
+🔹 Trust Bar
+Logos / text:
+Built for Africa
+M-Pesa Ready
+Bank-grade security
+99.9% uptime
+🔹 Features Grid (3×2)
+Each card visually mirrors dashboard cards.
+⚡ Real-time Payments
+📡 Webhooks with retries
+🔑 Secure API key management
+📊 Live analytics dashboard
+🌙 Dark mode support
+🧪 Test & Live environments
+🔹 Code + Dashboard Split
+Left:
+Copy code
+Bash
+curl -X POST https://api.paycraft.dev/payments
+Right:
+Animated chart
+Success rate rising
+Latency dropping
+🔹 How It Works (3 Steps)
+Create account
+Generate API keys
+Start accepting payments
+🔹 CTA Section
+“Start building in minutes.”
+→ Get Started Free
+🎨 Visual Style
+Background: White + Deep Blue sections
+Accent: #00C896
+Font: Inter
+Motion: subtle slide-in, hover states
+🅱️ Landing Page B: Founder / Business-Friendly Payments
+Best match: Design B – Ops & Analytics Dashboard
+🧠 Core Message
+“Understand and control your payments — without complexity.”
+🧩 Page Structure
+🔷 Hero
+Headline:
+“Accept payments. Track growth. Stay in control.”
+Subtext:
+All your transactions, analytics, and payouts in one dashboard.
+CTA:
+Start Free
+Request Demo
+📊 Visual Section
+Large analytics screenshot
+Highlight overlays:
+Daily volume
+Failed payment alerts
+Success rate %
+📦 Use-Case Cards
+SaaS businesses
+Marketplaces
+SMEs
+Fintech startups
+🔐 Security & Trust
+Encryption
+Role-based access
+Audit logs
+Compliance badges
+📈 Results Section
+“Increase success rates”
+“Reduce failed transactions”
+“Monitor in real-time”
+CTA
+“Power your payments with confidence.”
+🅲 Landing Page C: Dark-Mode Dev Brand (Modern / Bold)
+Best match: Design C – Dev Console
+🧠 Core Message
+“Payments, engineered.”
+🧩 Page Structure
+⚫ Hero (Dark)
+Terminal-style headline:
+Copy code
+Text
+> payments.run(paycraft)
+Subtext: Fast. Observable. Reliable.
+🔁 Live Data Visuals
+Animated transaction feed
+Latency graphs
+Webhook logs preview
+🧪 Dev-First Features
+CLI tools
+API playground
+Webhook debugger
+Test mode simulation
+CTA
+Launch with Paycraft →
+🎨 Unified Design System (Landing + Dashboard)
+Element
+Value
+Primary Color
+#0A2540
+Accent
+#00C896
+Font
+Inter / Satoshi
+Buttons
+Rounded, solid
+Charts
+Same library as dashboard
+Icons
+Lucide / Heroicons
+👉 Landing page components reuse dashboard components (cards, charts, tables) for perfect brand continuity.
+🎨 High-fidelity design (Figma-style)
+⚛️ Full Next.js + Tailwind landing page code
+🔗 Connect landing → auth → dashboard
+✍️ Marketing copy tuned for African fintechs
+Target audience first: developers or businesses?

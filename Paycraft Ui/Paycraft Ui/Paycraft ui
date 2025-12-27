@@ -1,0 +1,137 @@
+PayCraft Microcopy Design System
+
+This document defines the voice, tone, and microcopy standards for PayCraft’s UI/UX. It ensures consistency across tooltips, error messages, success confirmations, and empty states.
+
+🎯 Principles
+
+Developer-first: Clear, concise, technical-friendly language.
+
+Confident but neutral: Avoid jargon, reassure users.
+
+Action-oriented: Guide users toward next steps.
+
+Accessible: Ensure tooltips and messages are screen-reader friendly.
+
+🧩 Tooltips
+
+Element
+
+Tooltip Text
+
+API Key field
+
+Keep this secret. Rotate if compromised.
+
+Currency dropdown
+
+Supports NGN, KES, ZAR, USD, and more.
+
+Webhook URL
+
+We'll notify this endpoint on payment events.
+
+Retry logic toggle
+
+Enable automatic retries for failed transactions.
+
+Rate limits info
+
+Fair usage applies. See docs for thresholds.
+
+Sandbox/live switch
+
+Test safely in sandbox before going live.
+
+⚠️ Error Messages
+
+Context
+
+Error Message
+
+Invalid API key
+
+This key isn’t valid. Double-check or generate a new one.
+
+Network failure
+
+Connection lost. Please retry or check your network.
+
+Payment declined
+
+Payment failed. Verify details or try another method.
+
+Rate limit exceeded
+
+Too many requests. Slow down or check docs for limits.
+
+Missing required field
+
+This field is required. Please fill it in.
+
+Sandbox/live mismatch
+
+You’re in sandbox mode. Switch to live to process real payments.
+
+✅ Success Confirmations
+
+Context
+
+Success Message
+
+API key generated
+
+New API key created successfully.
+
+Payment processed
+
+Payment completed — funds are on the way.
+
+Webhook added
+
+Webhook registered. We’ll notify this endpoint on events.
+
+Retry enabled
+
+Automatic retries are now active.
+
+Account setup finished
+
+Your account is ready. Start integrating today.
+
+🕳️ Empty States
+
+Context
+
+Empty State Copy
+
+No payments yet
+
+No payments yet — let’s change that. Create your first transaction.
+
+No API keys
+
+You haven’t generated any keys. Create one to start building.
+
+No webhooks
+
+No webhooks configured. Add one to stay updated on events.
+
+Empty dashboard
+
+Your dashboard is waiting. Connect your app to see live data.
+
+No pricing plan selected
+
+Choose a plan to unlock PayCraft’s full potential.
+
+📘 Usage Guidelines
+
+Consistency: Always use the same phrasing for similar contexts.
+
+Clarity: Avoid ambiguity; messages should be instantly understandable.
+
+Tone: Professional, supportive, and developer-focused.
+
+Placement: Tooltips on hover/tap, errors inline near fields, success confirmations as banners or toasts.
+
+This design system ensures PayCraft’s product voice is unified, trustworthy, and developer-first across all user touchpoints.

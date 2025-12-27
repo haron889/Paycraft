@@ -1,0 +1,156 @@
+paycraft/
+│
+├── apps/
+│   ├── api/                    # Backend (NestJS)
+│   │   ├── src/
+│   │   │   ├── main.ts
+│   │   │   ├── app.module.ts
+│   │   │
+│   │   ├── config/             # Environment configs
+│   │   │   ├── database.config.ts
+│   │   │   ├── jwt.config.ts
+│   │   │   ├── rate-limit.config.ts
+│   │   │   └── env.ts
+│   │   │
+│   │   ├── modules/
+│   │   │   ├── auth/
+│   │   │   │   ├── auth.controller.ts
+│   │   │   │   ├── auth.service.ts
+│   │   │   │   ├── jwt.strategy.ts
+│   │   │   │   └── auth.module.ts
+│   │   │
+│   │   │   ├── users/
+│   │   │   │   ├── user.entity.ts
+│   │   │   │   ├── users.controller.ts
+│   │   │   │   ├── users.service.ts
+│   │   │   │   └── users.module.ts
+│   │   │
+│   │   │   ├── api-keys/
+│   │   │   │   ├── api-key.entity.ts
+│   │   │   │   ├── api-keys.controller.ts
+│   │   │   │   ├── api-keys.service.ts
+│   │   │   │   ├── api-key.guard.ts
+│   │   │   │   └── api-keys.module.ts
+│   │   │
+│   │   │   ├── payments/
+│   │   │   │   ├── payment.entity.ts
+│   │   │   │   ├── payments.controller.ts
+│   │   │   │   ├── payments.service.ts
+│   │   │   │   ├── sandbox.processor.ts
+│   │   │   │   └── payments.module.ts
+│   │   │
+│   │   │   ├── transactions/
+│   │   │   │   ├── transaction.entity.ts
+│   │   │   │   ├── transactions.service.ts
+│   │   │   │   └── transactions.module.ts
+│   │   │
+│   │   │   ├── webhooks/
+│   │   │   │   ├── webhook.entity.ts
+│   │   │   │   ├── webhooks.controller.ts
+│   │   │   │   ├── webhooks.service.ts
+│   │   │   │   ├── webhook.dispatcher.ts
+│   │   │   │   └── webhooks.module.ts
+│   │   │
+│   │   │   ├── retries/
+│   │   │   │   ├── retry-policy.entity.ts
+│   │   │   │   ├── retries.processor.ts
+│   │   │   │   └── retries.module.ts
+│   │   │
+│   │   ├── common/
+│   │   │   ├── decorators/
+│   │   │   ├── guards/
+│   │   │   ├── interceptors/
+│   │   │   ├── filters/
+│   │   │   │   └── http-exception.filter.ts
+│   │   │   ├── constants/
+│   │   │   └── utils/
+│   │   │
+│   │   ├── queues/
+│   │   │   ├── webhook.queue.ts
+│   │   │   └── retry.queue.ts
+│   │   │
+│   │   └── microcopy/          # Shared backend messages
+│   │       ├── errors.ts
+│   │       ├── success.ts
+│   │       └── tooltips.ts
+│   │
+│   │   ├── test/
+│   │   └── package.json
+│   │
+│   ├── web/                    # Frontend (React)
+│   │   ├── src/
+│   │   │   ├── app/
+│   │   │   │   ├── routes.tsx
+│   │   │   │   └── layout.tsx
+│   │   │   │
+│   │   │   ├── pages/
+│   │   │   │   ├── auth/
+│   │   │   │   │   ├── login.tsx
+│   │   │   │   │   └── signup.tsx
+│   │   │   │   │
+│   │   │   │   ├── dashboard/
+│   │   │   │   │   └── index.tsx
+│   │   │   │   │
+│   │   │   │   ├── api-keys/
+│   │   │   │   │   └── index.tsx
+│   │   │   │   │
+│   │   │   │   ├── payments/
+│   │   │   │   │   └── index.tsx
+│   │   │   │   │
+│   │   │   │   ├── webhooks/
+│   │   │   │   │   └── index.tsx
+│   │   │   │   │
+│   │   │   │   └── settings/
+│   │   │   │       └── index.tsx
+│   │   │
+│   │   │   ├── components/
+│   │   │   │   ├── Button.tsx
+│   │   │   │   ├── Input.tsx
+│   │   │   │   ├── Tooltip.tsx
+│   │   │   │   ├── Toast.tsx
+│   │   │   │   └── Modal.tsx
+│   │   │
+│   │   │   ├── services/
+│   │   │   │   ├── api.ts
+│   │   │   │   ├── auth.service.ts
+│   │   │   │   ├── payments.service.ts
+│   │   │   │   └── webhooks.service.ts
+│   │   │
+│   │   │   ├── store/
+│   │   │   ├── styles/
+│   │   │   ├── microcopy/       # Frontend copy mirror
+│   │   │   │   ├── errors.ts
+│   │   │   │   ├── success.ts
+│   │   │   │   └── tooltips.ts
+│   │   │
+│   │   │   └── utils/
+│   │   │
+│   │   └── package.json
+│
+├── packages/
+│   ├── shared/
+│   │   ├── types/
+│   │   │   ├── payment.ts
+│   │   │   ├── webhook.ts
+│   │   │   └── api-key.ts
+│   │   │
+│   │   ├── constants/
+│   │   └── microcopy/           # Source of truth
+│   │       ├── errors.ts
+│   │       ├── success.ts
+│   │       └── tooltips.ts
+│
+├── docs/
+│   ├── api.md
+│   ├── webhook-events.md
+│   ├── sandbox-vs-live.md
+│   └── rate-limits.md
+│
+├── docker/
+│   ├── Dockerfile.api
+│   ├── Dockerfile.web
+│   └── docker-compose.yml
+│
+├── .env.example
+├── README.md
+└── turbo.json / pnpm-workspace.yaml

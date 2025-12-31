@@ -104,8 +104,8 @@ Together, they form a pan-African tech ecosystem with unified design and shared 
 
 📫 Contact
 For questions, partnerships, or support:
-- Email: support@paycraft.africa  
-- Twitter: @PayCraftAfrica
+- Email: harononsele254@gmail.com
+- Twitter: @haron4410
 
 ---
 
